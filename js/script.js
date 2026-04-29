@@ -17,7 +17,9 @@ const getPreferredTheme = () => {
     return storedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
 };
 
 const setTheme = (theme) => {
@@ -25,8 +27,14 @@ const setTheme = (theme) => {
 
   if (themeToggle && themeText) {
     const isDark = theme === "dark";
-    themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-    themeToggle.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
+    themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light mode" : "Switch to dark mode",
+    );
+    themeToggle.setAttribute(
+      "title",
+      isDark ? "Switch to light mode" : "Switch to dark mode",
+    );
     themeText.textContent = isDark ? "Light" : "Dark";
   }
 };
@@ -64,7 +72,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 themeToggle?.addEventListener("click", () => {
-  const currentTheme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+  const currentTheme =
+    document.documentElement.dataset.theme === "dark" ? "dark" : "light";
   const nextTheme = currentTheme === "dark" ? "light" : "dark";
 
   localStorage.setItem(themeStorageKey, nextTheme);
@@ -78,6 +87,12 @@ siteNav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
+sideMenu?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    setSideMenu(false);
+  });
+});
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const activeFilter = button.dataset.filter;
@@ -86,7 +101,8 @@ filterButtons.forEach((button) => {
     button.classList.add("active");
 
     projectCards.forEach((card) => {
-      const shouldShow = activeFilter === "all" || card.dataset.category === activeFilter;
+      const shouldShow =
+        activeFilter === "all" || card.dataset.category === activeFilter;
       card.classList.toggle("is-hidden", !shouldShow);
     });
   });
