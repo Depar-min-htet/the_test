@@ -1,3 +1,2 @@
 <?php
-// $goal = "Junior Web Developer";
-// echo"My goal is become a $goal";
+declare(strict_types=1);
