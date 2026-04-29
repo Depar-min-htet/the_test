@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đeparminhtet® | Graphic & Brand Designer</title>
+    <meta
+      name="description"
+      content="Graphic and brand design portfolio featuring identity systems, packaging, campaign art direction, and visual storytelling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-left">
+        <button class="side-menu-toggle" type="button" aria-expanded="false" aria-controls="side-menu">
+          <span class="menu-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="menu-label">Menu</span>
+        </button>
+        <a class="brand" href="#top" aria-label="Đeparminhtet® home">Đepar</a>
+      </div>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="theme-icon moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M20 15.7A8.6 8.6 0 0 1 8.3 4 8.7 8.7 0 1 0 20 15.7Z" />
+          </svg>
+          <svg class="theme-icon sun-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" />
+          </svg>
+          <span class="theme-text">Dark</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="menu-overlay" data-menu-close></div>
+    <aside id="side-menu" class="side-menu" aria-label="Side menu">
+      <div class="side-menu-header">
+        <span>Menu</span>
+        <button class="side-menu-close" type="button" aria-label="Close side menu" data-menu-close>
+          Close
+        </button>
+      </div>
+      <nav class="side-menu-nav" aria-label="Account menu">
+        <a href="#about">Profile</a>
+        <a href="#contact">Account</a>
+        <a href="#services">Settings</a>
+      </nav>
+    </aside>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Đeparminhtet® designs sharp brand identities.</h1>
+          <p>
+            Graphic and brand design by Đepar, focused on logos, campaign systems, packaging,
+            and social assets with a clear visual point of view.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View selected work</a>
+            <a class="button secondary" href="mailto:masterBlenderr@outlook.com">Start a project</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract brand identity composition">
+          <div class="poster poster-main">
+            <span>FORM</span>
+            <strong>04</strong>
+          </div>
+          <div class="poster poster-side">
+            <span>Brand Kit</span>
+            <strong>Identity / Print / Social</strong>
+          </div>
+          <div class="color-chip chip-red"></div>
+          <div class="color-chip chip-ink"></div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <h2>Selected work</h2>
+          <p>Four sample case studies showing how the portfolio can present brand systems.</p>
+        </div>
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="identity">Identity</button>
+          <button class="filter" type="button" data-filter="packaging">Packaging</button>
+          <button class="filter" type="button" data-filter="campaign">Campaign</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="identity">
+            <div class="project-visual visual-one">
+              <span class="mark">NOVA</span>
+              <span class="line"></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Identity system</p>
+              <h3>Nova Atelier</h3>
+              <p>Elegant wordmark, stationery, and digital launch assets for a boutique interiors studio.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="packaging">
+            <div class="project-visual visual-two">
+              <span class="pack">KAI</span>
+              <span class="seal">01</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Packaging design</p>
+              <h3>Kai Botanics</h3>
+              <p>Color-coded label system and retail packaging for a clean skincare collection.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="campaign">
+            <div class="project-visual visual-three">
+              <span>SHIFT</span>
+              <span>POSTER SERIES</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Campaign art direction</p>
+              <h3>Shift Festival</h3>
+              <p>Poster, social, and wayfinding language for a contemporary design event.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="identity">
+            <div class="project-visual visual-four">
+              <span class="circle"></span>
+              <span class="brand-word">LOOM</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Brand refresh</p>
+              <h3>Loom Coffee</h3>
+              <p>Refined logo suite, menu typography, and print collateral for a neighborhood cafe.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section split">
+        <div>
+          <h2>Design services</h2>
+          <p>
+            Flexible brand design support for launch, refresh, and campaign moments.
+          </p>
+        </div>
+        <div class="service-list">
+          <div><strong>Brand identity</strong><span>Logo suites, typography, color, and guidelines.</span></div>
+          <div><strong>Packaging</strong><span>Labels, boxes, print-ready layouts, and product families.</span></div>
+          <div><strong>Campaign assets</strong><span>Posters, social templates, launch graphics, and art direction.</span></div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2>About</h2>
+        <p>
+          Đeparminhtet® is a graphic and brand designer focused on clear systems, expressive
+          typography, and practical assets that teams can use consistently.
+        </p>
+        <ul class="tools" aria-label="Tools and skills">
+          <li>Adobe Illustrator</li>
+          <li>Photoshop</li>
+          <li>Figma</li>
+          <li>Print production</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Have a brand project in mind?</h2>
+        <p>Send a short note about your timeline, budget, and what you need designed.</p>
+        <a class="button primary" href="mailto:masterBlenderr@outlook.com">masterBlenderr@outlook.com</a>
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
