@@ -3,8 +3,8 @@
     "*.skill": "markdown"
   },
   "copilot.chat.codeGeneration.language": "en",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": null,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -15,6 +15,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[php]": {
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "'JetBrains Mono Light'",
+  "editor.wordWrap": "on",
+  "editor.fontSize": 23,
 }
