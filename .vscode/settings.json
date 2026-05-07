@@ -21,4 +21,5 @@
   "editor.fontFamily": "'JetBrains Mono Light'",
   "editor.wordWrap": "on",
   "editor.fontSize": 23,
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
 }
